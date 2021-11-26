@@ -1,4 +1,5 @@
 #hello, let's do a Fibonacci series...
+#start with 0 and 1 
 fibb=[0,1]
 fibb[0] = 0
 fibb[1] = 1
