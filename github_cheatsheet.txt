@@ -33,13 +33,10 @@ git branch -a 				#see all local branches and the one I'm working onwith details
 	#AGAIN:
 git status				#see my changes
 git commit -m "adding comments "
-	#now push
+
+#now push local to web
 git push -u origin bname #u means local branch to remote branch with same name?
 
-
-#push local up to web
-
-git push -u origin bname
 	# in 2020 github switched from master to main. So if you are looking at old docs and videos just replace with main. 
 
 #make sure you're on the feature branch!!
