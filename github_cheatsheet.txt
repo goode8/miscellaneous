@@ -15,20 +15,6 @@ git push -u origin main
 ##push existing repo from the command line
 git remote add origin https://github.com/goode8/miscellaneous.git
 git push -u origin main
-
-#after changes
-git diff
-git status
-git add fib.py
-git commit -m "adding comments to beginning"
-	#then
-git pull origin master main??
-git push origin master
-#now you should see it on github
-
-#clone...get something from web copy to local
-git clone https://github.com/goode8/miscellaneous.git . # dot for here
-
 #feature branches
 git branch bname 		#create branch
 git branch 				#see all local branches and the one I'm working on
@@ -40,6 +26,22 @@ git status				#see my changes
 git commit -m "adding comments "
 	#now push
 git push -u origin bname #u means local branch to remote branch with same name?
+
+
+#make sure you're on the feature branch!!
+#after changes
+git diff
+git status
+git add fib.py
+git commit -m "adding comments to beginning"
+	#then
+git pull origin bname 
+git push origin bname
+#now you should see it on github
+
+#clone...get something from web copy to local
+git clone https://github.com/goode8/miscellaneous.git . # dot for here
+
 
 #merge a branch to main
 git checkout main
