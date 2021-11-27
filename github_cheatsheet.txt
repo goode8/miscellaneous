@@ -1,33 +1,28 @@
-##this is a quick cheatsheet for github. Still a work in progress
-git verb --help verbs: config,add
-ignore file good idea
+# this is a quick cheatsheet for github. Still a work in progress
+# i'm using the git bash app from windows (a command line) and github
+#
+
+#help
+git verb --help 	#verbs: config,add
+					#ignore file good idea
 
 #start here
+# open git bash. go to the folder you want to use. 
 git init
-git add FILE_NAME!!!!!!!!!! or git add -A for all
-git commit -m "adding blah blah"
-git status
+#if repo exists on github...use the url
+git remote add origin url 		# e.g. https://github.com/goode8/miscellaneous.git
 
-
-git remote add origin https://github.com/goode8/miscellaneous.git
-git push -u origin main
-
-##push existing repo from the command line
-git remote add origin https://github.com/goode8/miscellaneous.git
-git push -u origin main
-
-#after changes
-git diff
-git status
-git add fib.py
-git commit -m "adding comments to beginning"
-	#then
-git pull origin master main??
-git push origin master
-#now you should see it on github
-
+#to get stuff down from the web.
 #clone...get something from web copy to local
 git clone https://github.com/goode8/miscellaneous.git . # dot for here
+#part of setup?
+git remote add origin https://github.com/goode8/miscellaneous.git
+
+git add FILE_NAME!!!!!!!!!! #you have to do this a lot
+##or 
+git add -A 		#for all
+git commit -m "adding blah blah"
+git status		#informational
 
 #feature branches
 git branch bname 		#create branch
@@ -38,8 +33,27 @@ git branch -a 				#see all local branches and the one I'm working onwith details
 	#AGAIN:
 git status				#see my changes
 git commit -m "adding comments "
-	#now push
+
+#now push local to web
 git push -u origin bname #u means local branch to remote branch with same name?
+
+	# in 2020 github switched from master to main. So if you are looking at old docs and videos just replace with main. 
+
+#make sure you're on the feature branch!!
+#after changes
+git diff
+git status
+git add fib.py
+git commit -m "adding comments to beginning"
+	#then
+git pull origin bname 
+git push origin bname
+#or
+git push -u origin bname  #u means local branch to remote branch with same name?
+
+#now you should see it on github
+
+
 
 #merge a branch to main
 git checkout main
