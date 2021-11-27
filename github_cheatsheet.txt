@@ -9,6 +9,8 @@ git verb --help 	#verbs: config,add
 #start here
 # open git bash. go to the folder you want to use. 
 git init
+#if repo exists on github...use the url
+git remote add origin url 		# e.g. https://github.com/goode8/miscellaneous.git
 
 #to get stuff down from the web.
 #clone...get something from web copy to local
@@ -22,11 +24,6 @@ git add -A 		#for all
 git commit -m "adding blah blah"
 git status		#informational
 
-#push local up to web
-git remote add origin https://github.com/goode8/miscellaneous.git
-git push -u origin main
-	# in 2020 github switched from master to main. So if you are looking at old docs and videos just replace with main. 
-
 #feature branches
 git branch bname 		#create branch
 git branch 				#see all local branches and the one I'm working on
@@ -39,6 +36,11 @@ git commit -m "adding comments "
 	#now push
 git push -u origin bname #u means local branch to remote branch with same name?
 
+
+#push local up to web
+
+git push -u origin bname
+	# in 2020 github switched from master to main. So if you are looking at old docs and videos just replace with main. 
 
 #make sure you're on the feature branch!!
 #after changes
