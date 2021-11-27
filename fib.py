@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #let's do a Fibonacci series...
+=======
+#hello, let's do a Fibonacci series...
+>>>>>>> 52af6d368f51bd4c7bbeb2febf060cf828c02bbf
 #start with 0 and 1 
 fibb=[0,1]
 fibb[0] = 0
