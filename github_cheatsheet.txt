@@ -1,20 +1,32 @@
-##this is a quick cheatsheet for github. Still a work in progress
-git verb --help verbs: config,add
-ignore file good idea
+# this is a quick cheatsheet for github. Still a work in progress
+# i'm using the git bash app from windows (a command line) and github
+#
+
+#help
+git verb --help 	#verbs: config,add
+					#ignore file good idea
 
 #start here
+# open git bash. go to the folder you want to use. 
 git init
-git add FILE_NAME!!!!!!!!!! or git add -A for all
+
+#to get stuff down from the web.
+#clone...get something from web copy to local
+git clone https://github.com/goode8/miscellaneous.git . # dot for here
+#part of setup?
+git remote add origin https://github.com/goode8/miscellaneous.git
+
+git add FILE_NAME!!!!!!!!!! #you have to do this a lot
+##or 
+git add -A 		#for all
 git commit -m "adding blah blah"
-git status
+git status		#informational
 
-
+#push local up to web
 git remote add origin https://github.com/goode8/miscellaneous.git
 git push -u origin main
+	# in 2020 github switched from master to main. So if you are looking at old docs and videos just replace with main. 
 
-##push existing repo from the command line
-git remote add origin https://github.com/goode8/miscellaneous.git
-git push -u origin main
 #feature branches
 git branch bname 		#create branch
 git branch 				#see all local branches and the one I'm working on
@@ -37,10 +49,11 @@ git commit -m "adding comments to beginning"
 	#then
 git pull origin bname 
 git push origin bname
+#or
+git push -u origin bname  #u means local branch to remote branch with same name?
+
 #now you should see it on github
 
-#clone...get something from web copy to local
-git clone https://github.com/goode8/miscellaneous.git . # dot for here
 
 
 #merge a branch to main
