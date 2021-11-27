@@ -1,0 +1,56 @@
+##this is a quick cheatsheet for github. Still a work in progress
+git verb --help verbs: config,add
+ignore file good idea
+
+#start here
+git init
+git add FILE_NAME!!!!!!!!!! or git add -A for all
+git commit -m "adding blah blah"
+git status
+
+
+git remote add origin https://github.com/goode8/miscellaneous.git
+git push -u origin main
+
+##push existing repo from the command line
+git remote add origin https://github.com/goode8/miscellaneous.git
+git push -u origin main
+
+#after changes
+git diff
+git status
+git add fib.py
+git commit -m "adding comments to beginning"
+	#then
+git pull origin master main??
+git push origin master
+#now you should see it on github
+
+#clone...get something from web copy to local
+git clone https://github.com/goode8/miscellaneous.git . # dot for here
+
+#feature branches
+git branch bname 		#create branch
+git branch 				#see all local branches and the one I'm working on
+git checkout bname 		#change what youre working on
+#do work on file, change the feature 
+git branch -a 				#see all local branches and the one I'm working onwith details
+	#AGAIN:
+git status				#see my changes
+git commit -m "adding comments "
+	#now push
+git push -u origin bname #u means local branch to remote branch with same name?
+
+#merge a branch to main
+git checkout main
+git pull origin main
+git branch --merged 	#what's merged in so far
+git merge bname
+git push origin main
+
+#deleting branch
+git branch --merged 	#informational
+git branch -d bname 	#deletes locally!!!
+git branch -a 			#informational
+git push origin --delete bname
+						#deletes remote branch
