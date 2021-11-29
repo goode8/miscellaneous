@@ -5,6 +5,7 @@
 #help
 git verb --help 	#verbs: config,add
 					#ignore file good idea
+git log	##informational recent commits
 
 #start here
 # open git bash. go to the folder you want to use. 
@@ -33,6 +34,9 @@ git branch -a 				#see all local branches and the one I'm working onwith details
 	#AGAIN:
 git status				#see my changes
 git commit -m "adding comments "
+
+## to-do:
+## it might be nice to add more, but I haven't need them yet: https://gist.github.com/davfre/8313299 esp. Undoing previous actions
 
 #now push local to web
 git push -u origin bname #u means local branch to remote branch with same name?
